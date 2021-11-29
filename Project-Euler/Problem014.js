@@ -31,17 +31,15 @@ const getCollatzSequenceLength = (num, seqLength) => {
   }
 }
 
-const findLongestCollatzSequence = () => {
+export const findLongestCollatzSequence = (limit = 1000000) => {
   let startingPointForLargestSequence = 1
-  let largestSequnceLength = 1
-  for (let i = 2; i < 1000000; i++) {
+  let largestSequenceLength = 1
+  for (let i = 2; i < limit; i++) {
     const currentSequenceLength = getCollatzSequenceLength(i, 1)
-    if (currentSequenceLength > largestSequnceLength) {
+    if (currentSequenceLength > largestSequenceLength) {
       startingPointForLargestSequence = i
-      largestSequnceLength = currentSequenceLength
+      largestSequenceLength = currentSequenceLength
     }
   }
   return startingPointForLargestSequence
 }
-
-console.log(findLongestCollatzSequence())

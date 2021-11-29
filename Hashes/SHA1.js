@@ -9,11 +9,11 @@
 const CHAR_SIZE = 8
 
 /**
- * Adds padding to binary/hex string represention
+ * Adds padding to binary/hex string representation
  *
- * @param {string} str - string represention (binary/hex)
+ * @param {string} str - string representation (binary/hex)
  * @param {int} bits - total number of bits wanted
- * @return {string} - string represention padding with empty (0) bits
+ * @return {string} - string representation padding with empty (0) bits
  *
  * @example
  *      pad("10011", 8); // "00010011"
@@ -34,7 +34,7 @@ function pad (str, bits) {
  * @return {array} - array of original string split into chunks
  *
  * @example
- *      chunkify("this is a test", 2); // ["th", "is", " i", "s ", "a ", "te", "st"]
+ *      chunkify("this is a test", 2)
  */
 function chunkify (str, size) {
   const chunks = []
@@ -170,8 +170,5 @@ function SHA1 (message) {
   return HH
 }
 
-console.log(SHA1('A Test'))
-console.log(SHA1('A Test'))
-
 // export SHA1 function
-module.exports = SHA1
+export { SHA1 }

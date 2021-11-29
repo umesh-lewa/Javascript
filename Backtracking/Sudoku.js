@@ -60,11 +60,13 @@ class Sudoku {
     return this.board[row].slice(start, end)
   }
 
-  printBoard () {
+  printBoard (output = (...v) => console.log(...v)) {
     // helper function to display board
     for (let i = 0; i < 9; i++) {
-      if (i % 3 === 0 && i !== 0) console.log('- - - - - - - - - - - -')
-      console.log(
+      if (i % 3 === 0 && i !== 0) {
+        output('- - - - - - - - - - - -')
+      }
+      output(
         ...this.getSection(i, [0, 3]), ' | ',
         ...this.getSection(i, [3, 6]), ' | ',
         ...this.getSection(i, [6, 9]))
@@ -72,26 +74,4 @@ class Sudoku {
   }
 }
 
-function main () {
-  // main function with an example
-  const sudokuBoard = new Sudoku([
-    [3, 0, 6, 5, 0, 8, 4, 0, 0],
-    [5, 2, 0, 0, 0, 0, 0, 0, 0],
-    [0, 8, 7, 0, 0, 0, 0, 3, 1],
-    [0, 0, 3, 0, 1, 0, 0, 8, 0],
-    [9, 0, 0, 8, 6, 3, 0, 0, 5],
-    [0, 5, 0, 0, 9, 0, 6, 0, 0],
-    [1, 3, 0, 0, 0, 0, 2, 5, 0],
-    [0, 0, 0, 0, 0, 0, 0, 7, 4],
-    [0, 0, 5, 2, 0, 6, 3, 0, 0]
-  ])
-
-  sudokuBoard.printBoard()
-
-  console.log('\n')
-  sudokuBoard.solve()
-
-  sudokuBoard.printBoard()
-}
-
-main()
+export { Sudoku }

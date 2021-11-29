@@ -1,5 +1,10 @@
-//  https://en.wikipedia.org/wiki/Fibonacci_number
-
+/**
+ * @function Fibonacci
+ * @description Fibonacci is the sum of previous two fibonacci numbers.
+ * @param {Integer} N - The input integer
+ * @return {Integer} fibonacci of N.
+ * @see [Fibonacci_Numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+ */
 const fibonacci = (N) => {
   // creating array to store values
   const memo = new Array(N + 1)
@@ -11,8 +16,4 @@ const fibonacci = (N) => {
   return memo[N]
 }
 
-// testing
-(() => {
-  const number = 5
-  console.log(number + 'th Fibonacci number is ' + fibonacci(number))
-})()
+export { fibonacci }

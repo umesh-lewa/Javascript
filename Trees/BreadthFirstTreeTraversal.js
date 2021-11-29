@@ -22,10 +22,10 @@ class BinaryTree {
     for (let i = 1; i <= h; i++) {
       this.traverseLevel(this.root, i)
     }
-    return this.traversal.toLocaleString()
+    return this.traversal
   }
 
-  // Compputing the height of the tree
+  // Computing the height of the tree
   getHeight (node) {
     if (node == null) {
       return 0
@@ -48,19 +48,4 @@ class BinaryTree {
   }
 }
 
-const binaryTree = new BinaryTree()
-const root = new Node(7)
-root.left = new Node(5)
-root.right = new Node(8)
-root.left.left = new Node(3)
-root.left.right = new Node(6)
-root.right.right = new Node(9)
-binaryTree.root = root
-
-console.log(binaryTree.breadthFirst())
-
-//            7
-//           / \
-//          5   8
-//         / \   \
-//        3   6   9
+export { BinaryTree, Node }

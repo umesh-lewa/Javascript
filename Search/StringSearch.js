@@ -15,7 +15,7 @@ function makeTable (str) {
     // case 1. the current character doesn't match the last character of the longest prefix
     while (maxPrefix > 0 && str.charAt(i) !== str.charAt(maxPrefix)) {
       // if that is the case, we have to backtrack, and try find a character  that will be equal to the current character
-      // if we reach 0, then we couldn't find a chracter
+      // if we reach 0, then we couldn't find a character
       maxPrefix = table[maxPrefix - 1]
     }
     // case 2. The last character of the longest prefix matches the current character in `str`
@@ -35,7 +35,7 @@ function makeTable (str) {
 }
 
 // Find all the words that matches in a given string `str`
-function stringSearch (str, word) {
+export function stringSearch (str, word) {
   // find the prefix table in O(n)
   const prefixes = makeTable(word)
   const matches = []
@@ -80,4 +80,4 @@ function stringSearch (str, word) {
   return matches
 }
 
-console.log(stringSearch('Hello search the position of me', 'pos'))
+// stringSearch('Hello search the position of me', 'pos')

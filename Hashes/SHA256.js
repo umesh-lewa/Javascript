@@ -20,11 +20,11 @@ const K = [
 ]
 
 /**
- * Adds padding to binary/hex string represention
+ * Adds padding to binary/hex string representation
  *
- * @param {string} str - string represention (binary/hex)
+ * @param {string} str - string representation (binary/hex)
  * @param {int} bits - total number of bits wanted
- * @return {string} - string represention padding with empty (0) bits
+ * @return {string} - string representation padding with empty (0) bits
  *
  * @example
  *      pad("10011", 8); // "00010011"
@@ -45,7 +45,7 @@ function pad (str, bits) {
  * @return {array} - array of original string split into chunks
  *
  * @example
- *      chunkify("this is a test", 2); // ["th", "is", " i", "s ", "a ", "te", "st"]
+ *      chunkify("this is a test", 2)
  */
 function chunkify (str, size) {
   const chunks = []
@@ -56,7 +56,7 @@ function chunkify (str, size) {
 }
 
 /**
- * Rotates string represention of bits to th left
+ * Rotates string representation of bits to th left
  *
  * @param {string} bits - string representation of bits
  * @param {int} turns - number of rotations to make
@@ -76,7 +76,7 @@ function rotateRight (bits, turns) {
  * @return {string} - processed message
  */
 function preProcess (message) {
-  // covert message to binary representation padded to
+  // convert message to binary representation padded to
   // 8 bits, and add 1
   let m = message.split('')
     .map(e => e.charCodeAt(0))
@@ -185,4 +185,4 @@ function SHA256 (message) {
 }
 
 // export SHA256 function
-module.exports = SHA256
+export { SHA256 }
