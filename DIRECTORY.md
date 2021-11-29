@@ -113,6 +113,7 @@
     * [PermutationinString](https://github.com/TheAlgorithms/Javascript/blob/master/Dynamic-Programming/Sliding-Window/PermutationinString.js)
   * [SudokuSolver](https://github.com/TheAlgorithms/Javascript/blob/master/Dynamic-Programming/SudokuSolver.js)
   * [TrappingRainWater](https://github.com/TheAlgorithms/Javascript/blob/master/Dynamic-Programming/TrappingRainWater.js)
+  * [TribonacciNumber](https://github.com/TheAlgorithms/Javascript/blob/master/Dynamic-Programming/TribonacciNumber.js)
   * [ZeroOneKnapsack](https://github.com/TheAlgorithms/Javascript/blob/master/Dynamic-Programming/ZeroOneKnapsack.js)
 
 ## Geometry
@@ -167,6 +168,7 @@
   * [FigurateNumber](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/FigurateNumber.js)
   * [FindHcf](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/FindHcf.js)
   * [FindLcm](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/FindLcm.js)
+  * [FindMin](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/FindMin.js)
   * [GetEuclidGCD](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/GetEuclidGCD.js)
   * [GridGet](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/GridGet.js)
   * [IsDivisible](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/IsDivisible.js)
@@ -191,6 +193,7 @@
   * [PiApproximationMonteCarlo](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/PiApproximationMonteCarlo.js)
   * [Polynomial](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/Polynomial.js)
   * [Pow](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/Pow.js)
+  * [PowLogarithmic](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/PowLogarithmic.js)
   * [PrimeCheck](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/PrimeCheck.js)
   * [PrimeFactors](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/PrimeFactors.js)
   * [RadianToDegree](https://github.com/TheAlgorithms/Javascript/blob/master/Maths/RadianToDegree.js)
@@ -231,7 +234,7 @@
   * [BinaryEquivalent](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/BinaryEquivalent.js)
   * [BinarySearch](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/BinarySearch.js)
   * [EucledianGCD](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/EucledianGCD.js)
-  * [factorial](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/factorial.js)
+  * [Factorial](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/Factorial.js)
   * [FibonacciNumberRecursive](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/FibonacciNumberRecursive.js)
   * [FloodFill](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/FloodFill.js)
   * [KochSnowflake](https://github.com/TheAlgorithms/Javascript/blob/master/Recursive/KochSnowflake.js)
